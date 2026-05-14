@@ -16,12 +16,12 @@ RUN npm install
 # Copy the entire project
 COPY . .
 
-# Expose port 3000
-EXPOSE 3000
+# Expose port 5000
+EXPOSE 5000
 
 # Set environment variable to prevent OpenSSL errors
 ENV NODE_OPTIONS=--openssl-legacy-provider
-ENV PORT=3000
+ENV PORT=5000
 
 # Start the application
 CMD ["npm", "start"]
